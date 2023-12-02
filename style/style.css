@@ -1,0 +1,280 @@
+@import url(../style/fonts.css);
+
+:root {
+    --bg: #282828;
+    --mont: 'Montserrat';
+    --pro: 'ProstoOne';
+    --white: #FFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body,
+html{
+    scroll-behavior: smooth;
+}
+
+.header {
+    background: var(--bg);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+}
+
+.header__nav-left,
+.header__list,
+.footer__list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header__nav-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header__list-link,
+.footer__list-link {
+    color: #FFF;
+    font-family: var(--mont);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.banner {
+    background: url(../img/Header.png) no-repeat center / cover, linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #151515 100%), lightgray 0px -0.501px / 100% 128.755%;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__title {
+    color: #FFF;
+    font-family: var(--pro);
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 75px;
+}
+
+.banner__link {
+    border-radius: 10px;
+    background: #FFF;
+    color: #171718;
+    font-family: var(--mont);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    padding: 13px 16px;
+    transition: 0.4s;
+}
+
+.banner__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+}
+
+.banner__link:hover {
+    transform: scale(1.1);
+}
+
+.header__list-link:hover {
+    text-decoration: underline;
+}
+
+.main {
+    background: #151515;
+}
+
+.main__content .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__txt {
+    color: #FFF;
+    font-family: var(--mont);
+    font-size: 22px;
+    font-weight: 500;
+    max-width: 500px;
+    width: 100%;
+}
+
+.txt2 {
+    max-width: 540px;
+    width: 100%;
+}
+
+.txt3 {
+    text-align: right;
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.txt4 {
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.content__column3 {
+    display: flex;
+    align-items: center;
+}
+
+.txt3::after {
+    content: '';
+    max-width: 61px;
+    width: 100%;
+    height: 1px;
+    background: #C4C4C4;
+}
+
+.txt4::before {
+    content: '';
+    max-width: 61px;
+    width: 100%;
+    height: 1px;
+    background: #C4C4C4;
+}
+
+.content__columnn::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #FFF;
+    border: 1px solid;
+    margin: 30px 0;
+}
+
+.content__columnn{
+    display: flex;
+    flex-direction: column;
+}
+
+.main__catalog{
+    margin-top: 79px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog__cards{
+    border-radius: 6px;
+    background: #FFF;
+    width: 255px;
+    height: 312px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    margin-bottom: 55px;
+}
+
+.card__title{
+    color: #000;
+    font-family: var(--mont);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card__text{
+    color: #000;
+    font-family: var(--mont);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.card__link{
+    margin-top: 17px;
+    background: #151515;
+    width: 161px;
+    height: 34px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.card__link:hover{
+    transform: scale(1.1);
+}
+
+#iphone,
+#airpods{
+    scroll-margin: 80px;
+}
+
+.footer{
+    background: var(--bg);
+    padding: 81px 0;
+}
+
+.footer__nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__icons{
+    display: flex;
+    gap: 30px;
+}
